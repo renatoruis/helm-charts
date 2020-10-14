@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: ping-exporter
-  namespace: pingmonitor
 spec:
   updateStrategy:
     type: RollingUpdate
