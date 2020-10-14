@@ -81,10 +81,10 @@ spec:
       volumes:
         - name: kubelet-conf
           hostPath:
-            path: /var/lib/kubelet/
+            path: /var/lib/kubelet
         - name: kubeconfig-file
           hostPath:
-            path: /var/lib/kubelet/
+            path: /etc/kubernetes
         - name: pingmetrics
           hostPath:
             path: /tmp/ping-metrics

@@ -3,9 +3,9 @@ entries:
   ping-exporter:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-14T18:05:24.74243-03:00"
+    created: "2020-10-14T18:11:21.140079-03:00"
     description: Chart to monitoring nodes.
-    digest: 661d323ddd994a32891c1ebb00e364c8eed1c231f11e101f3a842fc64a7f7862
+    digest: 4074a52c426320571764af98fc09f91a3d9508b7236c2b93d449890b97b505d3
     home: https://renatoruis.github.io/helm-charts/
     maintainers:
     - email: renatoruis@gmail.com
@@ -14,4 +14,4 @@ entries:
     urls:
     - https://renatoruis.github.io/helm-charts/ping-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-14T18:05:24.734298-03:00"
+generated: "2020-10-14T18:11:21.13917-03:00"
