@@ -28,6 +28,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: ping-exporter
+  namespace: ping-exporter
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
