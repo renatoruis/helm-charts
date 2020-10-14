@@ -1,3 +1,0 @@
-Verificar se esta ok 
-
-kubectl get daemonsets.apps --all-namespaces
