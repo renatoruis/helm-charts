@@ -74,7 +74,7 @@ spec:
           - name: pingmetrics
             mountPath: /tmp/ping-metrics
           - name: kubeconfig-file
-            mountPath: /kubeconfig-file
+            mountPath: /etc/kubernetes
           - name: kubelet-conf
             mountPath: /var/lib/kubelet
             
