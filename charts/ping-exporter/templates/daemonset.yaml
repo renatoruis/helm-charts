@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: ping-exporter
+  namespace: {{ if .Values.namespace }}{{ .Values.namespace }}{{- else }}{{ "ping-exporter" }}{{- end }}
 spec:
   updateStrategy:
     type: RollingUpdate
