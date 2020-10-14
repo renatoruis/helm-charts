@@ -1,10 +1,10 @@
-kubectl --kubeconfig /kubeconfig-file/kubelet.conf get nodes -o json | \
+kubectl --kubeconfig /kubeconfig-file/kubeconfig get nodes -o json | \
 jq -r '{cluster_targets: [.items[] | { ipAddress: .status.addresses[0].address, name:.metadata.name }], external_targets: "" }' > /app/targets.json
 
 
 cat <<EOF >> /usr/local/bin/cron-ping
 #!/bin/sh
-kubectl --kubeconfig /kubeconfig-file/kubelet.conf get nodes -o json | \
+kubectl --kubeconfig /kubeconfig-file/kubeconfig get nodes -o json | \
 jq -r '{cluster_targets: [.items[] | { ipAddress: .status.addresses[0].address, name:.metadata.name }], external_targets: "" }' > /app/targets.json
 EOF
 
